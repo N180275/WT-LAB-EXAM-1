@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Swaroopa" />
+        <meta http-equiv="refresh" content="500000">
+        <meta name="decription" content="WT exam-1"/>
+        <title>N180275 Wt exam-1</title>
+        <link rel="icon" href="logoo.jpg"/>
+        <style type="text/css">
+            input,textarea,[contenteditable]
+            {
+                caret-color:yellow;
+            }
+            #ele8{
+            background-image:repeating-linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+            margin-left: 150px;
+            padding: 8px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            color:black;
+          }
+
+            #ele8:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+          }
+            /* body{
+                background-repeat: no-repeat;
+            } */
+        table{
+            border:3px solid blue;
+            background-color: aqua;
+            align-content: center;
+            padding:18px 0px 18px 18px;
+            border-radius:20px;
+        }
+        sub{
+            font-size:small;
+            color:red;
+            text-decoration:none;
+        }
+
+        h1{height:fit-content;
+            width:fit-content;
+            display:inline;
+            text-decoration:underline;
+            color:white;
+            background-color: deepskyblue;
+            border:2px solid black ;
+            border-radius:5px;
+        }
+        h1:hover{
+            background-color: green;
+            color:yellow;
+        }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div>
+                <form action="\js.php" method="post" onsubmit="return validation();">
+                <h1>&nbsp;F1H20<sub>RGUKT</sub></h1>
+                <table>
+                    <tr>
+                        <td>
+                            <big><b>User Name:</b></big>
+                      </td>
+                      <td>
+                            <input type="text" name="username" placeholder="Enter your user name" id="ele1">
+                    </td>
+                        <td><label id="l1" style="color:red;visibility:hidden">Invalid user name</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <big><b>Email:</b></big>
+                      </td>
+                      <td>
+                            <input type="email" name="email" placeholder="Enter email id" id="ele2">
+                    </td>
+                        <td><label id="l2" style="color:red;visibility:hidden">Invalid mail id</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <big><b>Mobile Number:</b></big>
+                      </td>
+                      <td>
+                            <input type="text" name="mobile" placeholder="Enter mobile number" id="ele3">
+                    </td>
+                        <td><label id="l3" style="color:red;visibility:hidden">Invalid phone number</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <big><b>Country:</b></big>
+                        </td>
+                        <td><select id="ele4">
+                            <option id="o1">India</option>
+                            <option id="o2">America</option>
+                            <option id="o3">England</option>
+                            <option id="o4">Germany</option>
+                        </select>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td><big><B>Payment type:</B></big></td>
+                        <td><input type="text" id=ele5></td>
+                        <td><label id="l5" style="color:red;visibility:hidden">Invalid DDN number/account number</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr id="beer" style="visibility:hidden;">
+                        <td><big><b>You need beer or not?</b></big></td>
+                        <td><input type="radio" id="yes"><label for="yes">Yes</label>
+                            <input type="radio" id="no"><label for="no">No</label></td> 
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td><big><b>Accommodation:</b></big></td>
+                        <td><input type="radio" id="nuz"><label for="nuz">Nuzvid</label>
+                            <input type="radio" id="sklm"><label for="sklm">Srikakulam</label>
+                            <input type="radio" id="ong"><label for="ong">Ongole</label>
+                            <input type="radio" id="rkv"><label for="rkv">RK Valley</label>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <big><b>Services to provide:</b></big>
+                        </td>
+                        <td id="eh">
+                            <input type="checkbox" id="eh1"> <label for="eh1">Breakfast</label>                          
+                            <input type="checkbox" id="eh2"><label for="eh2">Lunch</label>
+                            <input type="checkbox" id="eh3"><label for="eh3">Snacks</label>
+                           <input type="checkbox" id="eh4"><label for="eh4">Tea</label>
+                           <input type="checkbox" id="eh5"><label for="eh5">Coffee</label>
+                           <input type="checkbox" id="eh6"><label for="eh6">Eggs</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                    <td><big><b>No.of days of Staying:</b></big></td>
+                    <td><input type="number" id="ele6"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr onmouseover="totalcost()">
+                            <td>
+                                <big><b>Total Cost:</b></big>
+                            </td>
+                            <td>
+                                <b id="ele7"></b>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <td>
+                        <button type="submit" value="Submit" id="ele8">Submit</button>
+                    </td>
+                   </table>
+                </form>
+                </div>
+                </center>
+                <script type="text/javascript">
+                function validation()
+                {
+                var uname=document.getElementById("ele1").value.toUpperCase();
+                var r1=/^F\w{3}\w*/;
+                if(!r1.test(uname) || uname.length>9){
+                    document.getElementById("ele1").style.border="5px solid red";
+                document.getElementById("l1").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l1").style.display="none";
+                document.getElementById("ele1").style.border="1px solid black";},4000);
+                    return false;
+                    
+                }
+               var email=document.getElementById("ele2").value;
+               var r2=/^\w+(.|-|_)?\w+@(\w|-|.)+\.?\w+?\.(com|in|net|edu)$/;
+               if(!r2.test(email))
+               {
+                document.getElementById("ele2").style.border="5px solid red";
+                document.getElementById("l2").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l2").style.display="none";
+                document.getElementById("ele2").style.border="1px solid black";},4000);
+                    return false;
+                    
+               }
+               var ph=document.getElementById("ele3").value;
+               var r3=/^(997)\d{7}$/;
+               var r4=/^\d{4}-\d{4}-\d{4}$/;
+               if(!r3.test(ph) && !r4.test(ph))
+               {
+                document.getElementById("ele3").style.border="5px solid red";
+                document.getElementById("l3").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l2").style.display="none";
+                document.getElementById("ele3").style.border="1px solid black";},4000);
+                    return false;
+                   
+               }
+               var payment=document.getElementById("ele5").value;
+               var r5=/^(SBIN)\d{7}$/;
+               var r6=/^\d{11}$/;
+               if(!r5.test(payment) && !r6.test(payment)){
+                document.getElementById("ele5").style.border="5px solid red";
+                document.getElementById("l5").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l5").style.display="none";
+                document.getElementById("ele5").style.border="1px solid black";},4000);
+                    return false;   
+               }
+               var ndays=document.getElementById("ele6").value;
+               var v1=document.getElementById("nuz").checked;
+               var v2=document.getElementById("sklm").checked;
+               var v3=document.getElementById("ong").checked;
+               var v4=document.getElementById("rkv").checked;
+               if(c==0){
+                var sub=confirm("Are you sure submitting the form?");
+                if(!sub)
+                {
+                    return false;
+                }
+                else{
+                    return true;
+                }   
+                }
+                else{
+                    return false;
+                }
+            }
+                function totalcost()
+               {
+                var v1=document.getElementById("nuz").checked;
+               var v2=document.getElementById("sklm").checked;
+               var v3=document.getElementById("ong").checked;
+               var v4=document.getElementById("rkv").checked;
+                var ndays=document.getElementById("ele6").value;
+               if(v1||v4){
+                var n1=2000*ndays;
+                var tcost=document.getElementById("ele7").innerHTML=n1;
+               }
+               else{
+                var n2=3000*ndays;
+                var tcost=document.getElementById("ele7").innerHTML=n2;
+               }
+            }
+            function beerr()
+            {
+                var cntry=document.getElementById("ele4").value;
+               if(cntry!="India")
+               {
+                document.getElementById("beer").style.visibility="visible";
+               }
+            }
+                </script>
+                <script type="text/javascript" >
+                    var i=0;
+                    function coloring()
+                    {
+                        sources=["wimg6.jpg","wimg1.jpg","wimg4.jpg","wimg5.jpg","wimg7.jpg"];
+                        document.body.style.background="url(" + sources[i] + ")";
+                        i=(i+1)%sources.length;
+                        setTimeout(coloring,600);  
+                    }
+                    coloring();
+                    </script>
+    </body>
+</html>
